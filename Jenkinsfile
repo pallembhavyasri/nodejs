@@ -1,6 +1,6 @@
 properties([
     parameters([
-        string(name: 'TARGET_ENV', defaultValue: 'tes', description: 'test environment')
+        string(name: 'TARGET_ENV', defaultValue: 'test', description: 'test environment')
     ])
 ])
 node{
