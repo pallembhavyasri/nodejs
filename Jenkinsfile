@@ -8,6 +8,7 @@ node{
                 stage("Install dependencies"){
                 sh """
                     npm install
+                    ls -ltr 
                 """
             }
             stage("test"){
