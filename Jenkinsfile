@@ -4,6 +4,7 @@ properties([
     ])
 ])
 node{
+    checkout scm
             stage("test"){
                 sh """
                     echo "This is test stage"
