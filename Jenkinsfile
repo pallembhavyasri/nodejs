@@ -5,6 +5,11 @@ properties([
 ])
 node{
     checkout scm
+                stage("Install dependencies"){
+                sh """
+                    npm install
+                """
+            }
             stage("test"){
                 sh """
                     echo "This is test stage"
